@@ -1,0 +1,75 @@
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+body {
+    background: #f6f8fc; color: #232946; line-height: 1.7;
+    font-size: 20px; min-height: 100vh;
+}
+header, .section, .card, .project-card, footer {
+    border-radius: 12px;
+}
+header {
+    background: #6246ea; color: #fff; padding: 15px 25px;
+    display: flex; align-items: center; justify-content: space-between;
+    position: sticky; top: 0; z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.header-left { display: flex; align-items: center; }
+.header-left img {
+    width: 55px; height: 55px; border-radius: 50%;
+    border: 2px solid #fff; margin-right: 12px;
+}
+.header-left h1 { font-size: 22px; font-weight: bold; }
+.header-right a {
+    color: #fff; margin-left: 18px; text-decoration: none;
+    font-weight: 600; transition: 0.3s;
+}
+.header-right a:hover {
+    color: #e45858; border-bottom: 2px solid #e45858;
+}
+.hero {
+    background: linear-gradient(120deg, #35a29f 0%, #6246ea 100%);
+    color: #fff; text-align: center; padding: 90px 20px;
+}
+.hero h2 {
+    font-size: 36px; margin-bottom: 12px; color: #111;
+}
+.hero p {
+    font-size: 18px; max-width: 700px; margin: auto;
+}
+.section {
+    width: 100%; padding: 60px 10%; background: #fff;
+}
+.section.alt { background: #e0e7ff; }
+.card {
+    background: #fff; padding: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+.content {
+    max-width: 1000px; margin: auto;
+}
+h2 {
+    margin-bottom: 18px; color: #6246ea; font-size: 24px;
+    border-left: 5px solid #35a29f; padding-left: 10px;
+}
+ul { list-style: none; margin-top: 10px; }
+li { margin: 8px 0; font-size: 16px; }
+.github-link svg {
+    vertical-align: middle; fill: #24292f; transition: fill 0.2s;
+}
+.github-link:hover svg { fill: #2b7a78; }
+.github-link:hover {
+    color: #2b7a78; text-decoration: underline;
+}
+.project-card {
+    background: #fff; padding: 24px 20px; margin: 28px 0;
+    border-left: 6px solid #e45858;
+    box-shadow: 0 4px 12px rgba(98,70,234,0.08);
+    transition: transform 0.2s;
+}
+.project-card:hover { transform: translateY(-5px); }
+footer {
+    text-align: center; padding: 20px; background: #6246ea;
+    color: #fff; font-size: 14px; margin-top: 40px;
+}

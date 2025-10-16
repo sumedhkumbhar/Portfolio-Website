@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- React 18 + ReactDOM + Babel (no build needed) -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/@babel/standalone@7/babel.min.js"></script>
 </head>
 <body>
 
@@ -20,8 +24,12 @@
             <a href="#hobbies">Hobbies</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
+            <a href="#certificate">Certificate</a>
         </nav>
     </header>
+
+    <!-- React banner mount -->
+    <div id="react-banner-root"></div>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -113,14 +121,7 @@
     <section id="projects" class="section alt">
         <div class="content">
             <h2>Projects 💡</h2>
-            <div class="project-card">
-                <h3>Portfolio Website</h3>
-                <p>A simple personal portfolio made using only HTML and CSS.</p>
-            </div>
-            <div class="project-card">
-                <h3>Simple Calculator</h3>
-                <p>A basic calculator built with HTML, CSS, and JavaScript.</p>
-            </div>
+            <div id="projects-root"></div>
         </div>
     </section>
 
@@ -150,5 +151,10 @@
         <p>© 2025 My Portfolio | Built with ❤️ using HTML & CSS</p>
     </footer>
 
+    <!-- Back-to-top and misc React widgets mount here -->
+    <div id="react-root"></div>
+
+    <!-- React app (Babel transpiled in browser) -->
+    <script type="text/babel" src="app.jsx"></script>
 </body>
 </html>
